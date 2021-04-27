@@ -1,0 +1,28 @@
+{
+    "data": [{
+            "question": "Qu'elle est la capitale de la france",
+            "choices": ["Paris", "Pluvigner", "Compiègne", "Fort-Boyard"],
+            "answer": "Paris"
+        },
+        {
+            "question": "Combien de pates a une vache",
+            "choices": ["3", "5", "12", "4"],
+            "answer": "4"
+        },
+        {
+            "question": "Combien font 1+2",
+            "choices": ["1", "2", "3", "5"],
+            "answer": "3"
+        },
+        {
+            "question": "La terre es-t-elle plate",
+            "choices": ["oui", "non", "peut-etre"],
+            "answer": "non"
+        },
+        {
+            "question": "Il y a t-il des nanoparticule dans les vaccins susceptible d'etre activer par la 5G",
+            "choices": ["oui", "non", "peut-etre", "je suis pour"],
+            "answer": "non"
+        }
+    ]
+}
