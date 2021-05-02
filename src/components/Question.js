@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-
+import 'bulma/css/bulma.min.css';
 const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep }) => {
     const [selected, setSelected] = useState('');
     const [error, setError] = useState('');

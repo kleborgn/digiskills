@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import 'bulma/css/bulma.min.css';
 const End = ({ results, data, onReset, onAnswersCheck }) => {
     const [correctAnswers, setCorrectAnswers] = useState(0);
 

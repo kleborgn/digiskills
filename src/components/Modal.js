@@ -1,5 +1,5 @@
 import React from 'react';
-
+import 'bulma/css/bulma.min.css';
 const Modal = ({ onClose, results, data }) => {
     return (
         <div className="modal is-active">

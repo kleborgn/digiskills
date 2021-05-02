@@ -4,28 +4,62 @@ body,
     height: 100%;
 }
 
+body {
+    background-image: linear-gradient(to top right, #6200ffc4 10%, #6a00ffd0 40%, #9458c6 60%, #98107bf3 100%);
+}
+
 .App {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100%;
 }
 
 .App .card {
     max-width: 400px;
     width: 100%;
     text-align: center;
+    margin-top: 10%;
 }
-label.radio{
-  display: block;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 5px;
-  font-size: 20px;
+
+label.radio {
+    display: block;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
 }
-label.radio+.radio{
-  margin-left: 0;
+
+label.radio+.radio {
+    margin-left: 0;
 }
+
 label.radio input {
-  margin-right: 10px;
+    margin-right: 10px;
+}
+
+.home,
+.guides,
+.sign-up {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.sign-up, .guides, .sign-up {
+    color: #fff;
+    font-size: 100px;
+}
+
+.quiz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.modal-card {
+    margin-top: 20px !important;
 }
