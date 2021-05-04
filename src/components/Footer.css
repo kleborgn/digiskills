@@ -32,4 +32,10 @@
     border: none;
     background-color: #EF4B6C;
     color: #fff;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.btn-footer:hover{
+    background-color: #db4865 ;
+    transform: scale(1.1);
 }
