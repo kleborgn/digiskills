@@ -6,11 +6,14 @@ function BoxItem(props) {
         <>
             <li className="box__item">
                 <Link className="box__item__link" to={props.path}>
-                        <img src={props.src} alt="Travel" className="box__item__img"/>
+                    <div className="img">
+                    <img src={props.src} alt="Travel" className="box__item__img"/>
+                    </div>
+                   
                     <div className="box__item__info">
-                        <h3 className="box__item__text">{props.text}
+                        <h2 className="box__item__text">{props.text}
 
-                        </h3>
+                        </h2>
                     </div>
                 </Link>
             </li>

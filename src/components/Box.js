@@ -10,27 +10,27 @@ function Box() {
                 <div className="box__wrapper">
                     <ul className="box__items">
                         <BoxItem
-                        src="images/TipsKeeping.jpg"
-                        text="Being safe and responsible online"
-                        path='privacy'
+                        src="images/discord.svg"
+                        text="Discord"
+                        path='discord'
                         
                         />
                         <BoxItem
-                        src="images/TipsKeeping.jpg"
-                        text="Being safe and responsible online"
-                        path='privacy'
+                        src="images/Teams.svg"
+                        text="Team's"
+                        path='teams'
                         
                         />
                         <BoxItem
-                        src="images/TipsKeeping.jpg"
-                        text="Being safe and responsible online"
-                        path='privacy'
+                        src="images/googledoc.svg"
+                        text="G-Doc"
+                        path='google-doc'
                         
                         />
                         <BoxItem
-                        src="images/TipsKeeping.jpg"
-                        text="Being safe and responsible online"
-                        path='privacy'
+                        src="images/winrar.svg"
+                        text="Winrar"
+                        path='winrar'
                         
                         />
                         
@@ -38,21 +38,21 @@ function Box() {
                     <ul className="box__items">
                         
                         <BoxItem
-                        src="images/TipsKeeping.jpg"
-                        text="Being safe and responsible online"
-                        path='privacy'
+                        src="images/gimp.svg"
+                        text="Gimp"
+                        path='gimp'
                         
                         />
                         <BoxItem
-                        src="images/TipsKeeping.jpg"
-                        text="Being safe and responsible online"
-                        path='privacy'
+                        src="images/trello.svg"
+                        text="Trello"
+                        path='trello'
                         
                         />
                         <BoxItem
-                        src="images/TipsKeeping.jpg"
-                        text="Being safe and responsible online"
-                        path='privacy'
+                        src="images/office.svg"
+                        text="Office"
+                        path='office'
                         
                         />
                     </ul>
