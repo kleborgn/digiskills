@@ -1,16 +1,16 @@
 .cards {
     padding: 4rem;
-    background: #fff;
+    background: #DEE6E7;
   }
   
-  h1 {
+  .cards h1 {
     text-align: center;
     font-size: 3rem;
     color: rgb(0, 0, 0);
     font-weight: 500;
   }
 
-  h1:after{
+  .cards h1:after{
       position: absolute;
       content: '';
       bottom: -150px;

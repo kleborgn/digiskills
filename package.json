@@ -1,5 +1,5 @@
 {
-  "name": "projet",
+  "name": "digiskills",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "node-sass": "^5.0.0",
     "react-url-loader": "^0.0.3",
     "url-loader": "^4.1.1"
   }

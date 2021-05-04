@@ -37,14 +37,16 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
             <div className="card-content">
                 <div className="content">
                     <h2 className="mb-5"> {data.question}</h2>
-                    <div className="control" ref={radioWrapper}>
-                        {data.choices.map((choice, i) => (
+                    <div className="control" ref={radioWrapper} multiple={true}>
+                        
+                        {data.choices.map((choice,i) => (
                             <label className="radio has-background-light" key={i}>
-                                <input type="radio" name="answer" value={choice} onChange={changeHandler} />
+                                <input  multiple={true} type="radio" name="answer" value={choice} onChange={changeHandler} />
                                 {choice}
                             </label>
+                            
                         ))}
-
+                       
                     </div>
                     {error && <div className="has-text-danger"> {error}</div>}
                     <button className="button is-link is-medium is-fullwidth mt-4" onClick={nextClickHandler}>Next</button>

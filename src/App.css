@@ -2,6 +2,7 @@ html,
 body,
 #root {
     height: 100%;
+    
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 .App .card {
-    max-width: 400px;
+    max-width: 800px;
     width: 100%;
     text-align: center;
     margin-top: 10%;
@@ -58,6 +59,7 @@ label.radio input {
     justify-content: center;
     font-size: 3rem;
     color: #fff;
+    margin-top: 5%;
 }
 
 .modal-card {

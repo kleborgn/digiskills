@@ -1,28 +1,53 @@
 {
     "data": [{
-            "question": "Qu'elle est la capitale de la france",
-            "choices": ["Paris", "Pluvigner", "Compiègne", "Fort-Boyard"],
-            "answer": "Paris"
+            "question": "What is Google Chrome?",
+            "choices": ["A search engine", "A web browser", "An Operating System"],
+            "answer": "A web browser"
         },
         {
-            "question": "Combien de pates a une vache",
-            "choices": ["3", "5", "12", "4"],
-            "answer": "4"
+            "question": "What would be a good file name for a finished essay about Spinoza?",
+            "choices": ["essay.docx", "sfjqojf.docx", "Spinoza_Essay_final.docx"],
+            "answer": "Spinoza_Essay_final.docx"
         },
         {
-            "question": "Combien font 1+2",
-            "choices": ["1", "2", "3", "5"],
-            "answer": "3"
+            "question": "I have a technical problem, what do I do?",
+            "choices": ["I search the internet for my problem", "I am buying a new computer", "I ask someone I know for help"],
+            "answer": "I search the internet for my problem"
         },
         {
-            "question": "La terre es-t-elle plate",
-            "choices": ["oui", "non", "peut-etre"],
-            "answer": "non"
+            "question": "Which of these programs can I use to edit a .jpg?",
+            "choices": ["Word", "Paint", "Winrar"],
+            "answer": "Winrar"
         },
         {
-            "question": "Il y a t-il des nanoparticule dans les vaccins susceptible d'etre activer par la 5G",
-            "choices": ["oui", "non", "peut-etre", "je suis pour"],
-            "answer": "non"
+            "question": "I need to send several files to someone, what do I do?",
+            "choices": ["I send them one by one", "I compress them with a software like WinRAR"],
+            "answer": "I compress them with a software like WinRAR"
+        },
+        {
+            "question": "What is the best password?",
+            "choices": ["07041998", "superman","8BPxK%!s9-#a"],
+            "answer": "8BPxK%!s9-#a"
+        },
+        {
+            "question": "What is the best way to manage passwords?",
+            "choices": ["Keeping them in mind", "Register them in a password manager like KeePass", "Write them down on a post-it note"],
+            "answer": "Register them in a password manager like KeePass"
+        },
+        {
+            "question": "Can I do things on the internet that I wouldn't do in real life?",
+            "choices": ["Yes", "No"],
+            "answer": "No"
+        },
+        {
+            "question": "Can I use the << Connect with Facebook/Google >> feature?",
+            "choices": ["Yes, it's convenient", "No, it makes me more easily traceable and shares my personal data"],
+            "answer": "No, it makes me more easily traceable and shares my personal data"
+        },
+        {
+            "question": "When should I update?",
+            "choices": ["When asked", "When I have time","Never"],
+            "answer": "When asked"
         }
     ]
 }

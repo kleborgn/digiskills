@@ -21,7 +21,7 @@ const App = () => {
   }
   return (
     <>
-    <h1 className="quiz">Quiz</h1>
+    <h1 className="quiz">Test your skills</h1>
     <div className="App" >
       
       {step === 1 && <Start onQuizStart={quizStartHandler} />}
