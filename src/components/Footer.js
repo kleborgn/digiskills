@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from './Button'
 import './Footer.css'
 
 function Footer() {
@@ -6,9 +7,9 @@ function Footer() {
         <div className='footer-container'>
             <img className="svg-footer" src="/images/SvgFooter.png" alt="/"/>
             <h1>Go test yourself !</h1>
-            <div className="hero-btns">
-               
-            </div>
+            <button className="btn-footer" to="/Quiz">
+                Quiz !
+            </button>
             
         </div>
     )
