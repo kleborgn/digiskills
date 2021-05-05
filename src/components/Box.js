@@ -6,7 +6,9 @@ function Box() {
     return (
         <div className='box'>
             <h1>Usefull tools</h1>
+           
             <div className="box__container">
+            
                 <div className="box__wrapper">
                     <ul className="box__items">
                         <BoxItem

@@ -45,13 +45,13 @@ const Navigation = () => {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/quiz" className="nav-links" onClick={closeMobileMenu}>
-                                Quiz
+                            <Link to="/tools" className="nav-links" onClick={closeMobileMenu}>
+                                Tools
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>
-                                Sign up
+                            <Link to="/quiz" className="nav-links" onClick={closeMobileMenu}>
+                                Quiz
                             </Link>
                         </li>
                     </ul>
