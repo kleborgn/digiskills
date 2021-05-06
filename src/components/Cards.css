@@ -13,9 +13,9 @@
   .cards h1:after{
       position: absolute;
       content: '';
-      bottom: -150px;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-50%)
+                  translateY(80px);
       height: 4px;
       width: 100px;
       background-color: rgb(206, 39, 206);
