@@ -43,6 +43,7 @@
   "devDependencies": {
     "node-sass": "^5.0.0",
     "react-url-loader": "^0.0.3",
-    "url-loader": "^4.1.1"
+    "url-loader": "^4.1.1",
+    "webpack": "^4.44.2"
   }
 }

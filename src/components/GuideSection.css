@@ -1,6 +1,29 @@
-.cards {
+h1{
+    text-align: center;
+    margin: 2% auto;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.guide-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: 490;
+    font-size: 1.4rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 8px 10px 0 rgba(5, 10, 12, 0.2), 0 7px 20px 0 rgba(10, 17, 20, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #DEE6E7;
+}
+.guide__container .cards {
     padding: 4rem;
-    background: #DEE6E7;
+    background: none;
+  
   }
   
   .cards h1 {
@@ -10,23 +33,13 @@
     font-weight: 500;
   }
 
-  .cards h1:after{
-      position: absolute;
-      content: '';
-      left: 50%;
-      transform: translateX(-50%)
-                  translateY(80px);
-      height: 4px;
-      width: 100px;
-      background-color: rgb(206, 39, 206);
-
-  }
+ 
   
   .cards__container {
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-width: 1120px;
+    max-width: 1320px;
     width: 90%;
     margin: 0 auto;
   }
@@ -43,7 +56,7 @@
   .cards__item {
     display: flex;
     flex: 1;
-    margin: 0 1rem;
+    margin: 0 3rem;
     border-radius: 10px;
   }
   
@@ -106,6 +119,8 @@
   
   .cards__item__info {
     padding: 20px 30px 30px;
+    background-color: #DEE6E7;
+
   }
   
   .cards__item__text {

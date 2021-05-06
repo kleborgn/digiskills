@@ -12,7 +12,7 @@ const End = ({ results, data, onReset, onAnswersCheck }) => {
         });
         setCorrectAnswers(correct);
 
-    }, []);
+    }, [results, data]);
     return (
         <div className="card">
             <div className="card-content">
