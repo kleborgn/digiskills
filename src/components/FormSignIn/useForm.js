@@ -20,7 +20,6 @@ const useForm = (callback, validate) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
     setErrors(validate(values));
     setIsSubmitting(true);
   };
@@ -31,7 +30,7 @@ const useForm = (callback, validate) => {
         callback();
       }
     },
-    [errors]
+    [errors, isSubmitting, callback]
   );
 
   return { handleChange, handleSubmit, values, errors };
