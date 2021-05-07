@@ -52,11 +52,16 @@
 .form-success {
   text-align: center;
   font-size: 24px;
-  margin-top: 80px;
   color: #fff;
 }
 
 .form-content-right {
+  border-radius: 0 10px 10px 0;
+  position: relative;
+  background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(17, 17, 17) 100%);
+}
+
+.form-content-right-success{
   border-radius: 0 10px 10px 0;
   position: relative;
   background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(17, 17, 17) 100%);
@@ -75,7 +80,7 @@
   align-items: center;
 }
 
- h1 {
+ .form h1 {
   font-size: 1rem;
   text-align: start;
   width: 80%;

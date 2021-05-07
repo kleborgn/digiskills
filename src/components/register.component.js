@@ -4,6 +4,7 @@ import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
 import AuthService from "../services/auth.service";
+import FormSuccess from "./FormSignUp/FormSucces";
 
 const required = value => {
     if (!value) {
@@ -135,12 +136,13 @@ export default class Register extends Component {
                             this.form = c;
                         }}
                     >
-                        <h1>
+                        
+                        {!this.state.successful && (
+                            <>
+                            <h1>
                             Get started with us today! Create your account by filling out the
                             information below.
                         </h1>
-                        {!this.state.successful && (
-                            <>
                                 <div className="form-inputs">
                                     <label className='form-label' htmlFor="username">Username</label>
                                     <Input
@@ -189,7 +191,7 @@ export default class Register extends Component {
                                 <div
                                     className={
                                         this.state.successful
-                                            ? "alert alert-success"
+                                            ? "form-success"
                                             : "alert alert-danger"
                                     }
                                     role="alert"
@@ -203,7 +205,9 @@ export default class Register extends Component {
                             ref={c => {
                                 this.checkBtn = c;
                             }}
+                           
                         />
+                    
                     </Form>
                     </div>
                 </div>
