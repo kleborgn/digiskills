@@ -3,7 +3,6 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
-
 import AuthService from "../services/auth.service";
 
 const required = value => {
@@ -123,26 +122,30 @@ export default class Register extends Component {
     render() {
         return (
             <div className="col-md-12">
-                <div className="card card-container">
-                    <img
-                        src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-                        alt="profile-img"
-                        className="profile-img-card"
-                    />
+                <div className="form-container">
 
+                    <div className='form-content-left'>
+                        <img className='form-img' src='images/img-2.svg' alt='spaceship' />
+                    </div>
+                    <div className="form-content-right">
                     <Form
+                        className='form'
                         onSubmit={this.handleRegister}
                         ref={c => {
                             this.form = c;
                         }}
                     >
+                        <h1>
+                            Get started with us today! Create your account by filling out the
+                            information below.
+                        </h1>
                         {!this.state.successful && (
-                            <div>
-                                <div className="form-group">
-                                    <label htmlFor="username">Username</label>
+                            <>
+                                <div className="form-inputs">
+                                    <label className='form-label' htmlFor="username">Username</label>
                                     <Input
                                         type="text"
-                                        className="form-control"
+                                        className='form-input'
                                         name="username"
                                         value={this.state.username}
                                         onChange={this.onChangeUsername}
@@ -150,11 +153,11 @@ export default class Register extends Component {
                                     />
                                 </div>
 
-                                <div className="form-group">
-                                    <label htmlFor="email">Email</label>
+                                <div className="form-inputs">
+                                    <label className='form-label' htmlFor="email">Email</label>
                                     <Input
                                         type="text"
-                                        className="form-control"
+                                        className='form-input'
                                         name="email"
                                         value={this.state.email}
                                         onChange={this.onChangeEmail}
@@ -162,11 +165,11 @@ export default class Register extends Component {
                                     />
                                 </div>
 
-                                <div className="form-group">
-                                    <label htmlFor="password">Password</label>
+                                <div className="form-inputs">
+                                    <label className='form-label' htmlFor="password">Password</label>
                                     <Input
                                         type="password"
-                                        className="form-control"
+                                        className='form-input'
                                         name="password"
                                         value={this.state.password}
                                         onChange={this.onChangePassword}
@@ -174,14 +177,15 @@ export default class Register extends Component {
                                     />
                                 </div>
 
-                                <div className="form-group">
-                                    <button className="btn btn-primary btn-block">Sign Up</button>
-                                </div>
-                            </div>
+                                    <button className="form-input-btn">Sign Up</button>
+                                <span className='form-input-login'>
+                                    Already have an account? Login <a href='/Login'>here</a>
+                                </span>
+                            </>
                         )}
 
                         {this.state.message && (
-                            <div className="form-group">
+                            <div className="form-inputs">
                                 <div
                                     className={
                                         this.state.successful
@@ -201,6 +205,7 @@ export default class Register extends Component {
                             }}
                         />
                     </Form>
+                    </div>
                 </div>
             </div>
         );

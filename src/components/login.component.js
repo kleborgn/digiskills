@@ -82,24 +82,26 @@ export default class Login extends Component {
     render() {
         return (
             <div className="col-md-12">
-                <div className="card card-container">
-                    <img
-                        src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-                        alt="profile-img"
-                        className="profile-img-card"
-                    />
-
+                <div className="form-container">
+                <div className='form-content-left'>
+                    <img className='form-img' src='images/img-1.svg' alt='spaceship' />
+                </div>
+                <div className="form-content-right">
                     <Form
+                        className="form"
                         onSubmit={this.handleLogin}
                         ref={c => {
                             this.form = c;
                         }}
                     >
-                        <div className="form-group">
-                            <label htmlFor="username">Username</label>
+                        <h1>
+                            Welcome back! Login to your account to access the quiz !
+                        </h1>
+                        <div className="form-inputs">
+                            <label className='form-label' htmlFor="username">Username</label>
                             <Input
                                 type="text"
-                                className="form-control"
+                                className="form-input"
                                 name="username"
                                 value={this.state.username}
                                 onChange={this.onChangeUsername}
@@ -107,11 +109,11 @@ export default class Login extends Component {
                             />
                         </div>
 
-                        <div className="form-group">
-                            <label htmlFor="password">Password</label>
+                        <div className="form-inputs">
+                            <label className='form-label' htmlFor="password">Password</label>
                             <Input
                                 type="password"
-                                className="form-control"
+                                className="form-input"
                                 name="password"
                                 value={this.state.password}
                                 onChange={this.onChangePassword}
@@ -119,9 +121,9 @@ export default class Login extends Component {
                             />
                         </div>
 
-                        <div className="form-group">
+                        
                             <button
-                                className="btn btn-primary btn-block"
+                                className="form-input-btn"
                                 disabled={this.state.loading}
                             >
                                 {this.state.loading && (
@@ -129,10 +131,13 @@ export default class Login extends Component {
                                 )}
                                 <span>Login</span>
                             </button>
-                        </div>
+                            <span className='form-input-login'>
+                                You don't have account? Sign Up <a href='/sign-up'>here</a>
+                            </span>
+                      
 
                         {this.state.message && (
-                            <div className="form-group">
+                            <div className="form-inputs">
                                 <div className="alert alert-danger" role="alert">
                                     {this.state.message}
                                 </div>
@@ -145,6 +150,7 @@ export default class Login extends Component {
                             }}
                         />
                     </Form>
+                    </div>
                 </div>
             </div>
         );

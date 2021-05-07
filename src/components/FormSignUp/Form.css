@@ -75,7 +75,7 @@
   align-items: center;
 }
 
-.form h1 {
+ h1 {
   font-size: 1rem;
   text-align: start;
   width: 80%;
@@ -85,7 +85,9 @@
 
 .form-inputs {
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   width: 80%;
+  color: #f00e0e;
 }
 
 .form-inputs p {
