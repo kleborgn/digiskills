@@ -4,7 +4,8 @@ import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
 import AuthService from "../services/auth.service";
-import FormSuccess from "./FormSignUp/FormSucces";
+import './css/Form.css'
+
 
 const required = value => {
     if (!value) {
@@ -180,11 +181,11 @@ export default class Register extends Component {
                                 </div>
 
                                     <button className="form-input-btn">Sign Up</button>
-                                <span className='form-input-login'>
-                                    Already have an account? Login <a href='/Login'>here</a>
-                                </span>
                             </>
                         )}
+                        <span className='form-input-login'>
+                                Login <a href='/Login'>here</a>
+                                </span>
 
                         {this.state.message && (
                             <div className="form-inputs">

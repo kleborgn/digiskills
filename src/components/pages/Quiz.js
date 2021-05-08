@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import Start from '../Start';
-import Question from '../Question';
+import Start from '../Quiz/Start';
+import Question from '../Quiz/Question';
 import quizData from '../../data/quiz.json';
-import End from '../End';
-import Modal from '../Modal';
+import End from '../Quiz/End';
+import Modal from '../Quiz/Modal';
 const App = () => {
+  
   const [step, setStep] = useState(1);
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);

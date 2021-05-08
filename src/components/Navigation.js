@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
-import './Navigation.css';
+import './css/Navigation.css';
 import { Link } from 'react-router-dom';
-import { Button } from './Button';
+import { Button } from './Home/Button';
 
 const Navigation = () => {
     const [click,setClick] = useState(false);
@@ -54,6 +54,21 @@ const Navigation = () => {
                                 Quiz
                             </Link>
                         </li>
+                        <li className="nav-item">
+                            <Link to="/profile" className="nav-links" onClick={closeMobileMenu}>
+                                Profile
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to='/sign-up'
+                                className='nav-links-mobile'
+                                onClick={closeMobileMenu}
+                            >
+                                Sign Up
+                            </Link>
+                        </li>
+                        
                     </ul>
                     {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
                 </div>

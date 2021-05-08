@@ -5,8 +5,7 @@ import Navigation from './components/Navigation'
 import Home from './components/pages/Home';
 import Quiz from './components/pages/Quiz';
 import Guides from './components/pages/Guides';
-import SignUp from './components/pages/SignUp';
-import SignIp from './components/pages/SignIn';
+
 
 import AuthService from "./services/auth.service";
 
