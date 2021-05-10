@@ -15,28 +15,32 @@ const GuideSection = () => {
                     <ul className="cards__items">
                         <CardItem
                         src="images/TipsKeeping.jpg"
-                        text="Being safe and responsible online"
+                        text="Being safe and responsible is proctecting privacy, protecting data, being responsible online and digital wellbeing
+                          "
                         label="Security"
                         path='privacy'
                         
                         />
                         <CardItem
                         src="images/MobileDevices.png"
-                        text="Using devices and handling information "
+                        text="Using devices and handling information is Using devices, 
+                        Finding and evaluating information, 
+                        Mananing and storing information, 
+                        Identifying and solving technical problem "
                         label="Information"
                         path='devices'
                         
                         />
                         <CardItem
                         src="images/Social-media.png"
-                        text="Creating and editing "
+                        text="Creating and editing documents or digital media and processing numerical data"
                         label="Create"
                         path='creating'
                         
                         />
                         <CardItem
                         src="images/Communicating.png"
-                        text="Communicating"
+                        text="Communicating and sharing and also managing traceable online activities"
                         label="Communication"
                         path='communication'
                         

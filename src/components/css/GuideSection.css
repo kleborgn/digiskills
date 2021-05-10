@@ -21,7 +21,7 @@ h1{
     background-color: #DEE6E7;
 }
 .guide__container .cards {
-    padding: 4rem;
+  padding: 0 !important;
     background: none;
   
   }

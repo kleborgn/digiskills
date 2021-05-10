@@ -5,7 +5,8 @@ import Navigation from './components/Navigation'
 import Home from './components/pages/Home';
 import Quiz from './components/pages/Quiz';
 import Guides from './components/pages/Guides';
-
+import BoardUser from './components/pages/BoardUser';
+import BoardAdmin from './components/pages/BoardAdmin';
 
 import AuthService from "./services/auth.service";
 
@@ -45,40 +46,12 @@ class App extends Component {
     const { currentUser, showModeratorBoard, showAdminBoard } = this.state;
     return (
         <>
-          <Router>
-            <Navigation />
-            <Switch>
-              <Route path='/' exact component={Home} />
-              <Route path='/Quiz' component={Quiz} />
-              <Route path='/Guides' component={Guides} />
-              <Route path='/Sign-up' component={Register} />
-              <Route path='/Login' component={Login} />
-              <Route path='/profile' component={Profile} />
-            </Switch>
-          </Router>
+         <BoardUser/>
 
         </>
     );
   }
 }
 
-const Application = () => {
-  const { currentUser, showModeratorBoard, showAdminBoard } = this.state;
-  return (
-    <>
-      <Router>
-        <Navigation />
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/Quiz' component={Quiz} />
-          <Route path='/Guides' component={Guides} />
-          <Route path='/Sign-up' component={Register} />
-          <Route path='/Login' component={Login} />
-        </Switch>
-      </Router>
-
-    </>
-  );
-}
 
 export default App;

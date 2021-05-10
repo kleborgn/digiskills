@@ -1,0 +1,25 @@
+
+.container__tools{
+  margin: 100px auto;
+  width: 1000px !important;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  height: 600px;
+  background-color: #DEE6E7;
+}
+.container__tools h1 {
+    color: black;
+    text-align: center;
+}
+.container__tools img{
+   width: 250px !important;
+   height: 350px;
+   float: left;
+   shape-outside: circle();
+   margin: 30px;
+}
+.content__tools{
+    font-size: 20px;
+}
