@@ -7,19 +7,20 @@
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   height: 600px;
-  background-color: #DEE6E7;
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
 }
 .container__tools h1 {
     color: black;
     text-align: center;
 }
 .container__tools img{
-   width: 250px !important;
-   height: 350px;
+   width: 200px !important;
+   height: 300px;
    float: left;
    shape-outside: circle();
-   margin: 30px;
+   margin: 40px;
 }
 .content__tools{
     font-size: 20px;
+    font-weight: 500;
 }

@@ -2,6 +2,7 @@ html,
 body,
 #root {
     height: 100%;
+    font-family: 'Alice', serif;
     
 }
 
@@ -19,7 +20,7 @@ body {
     max-width: 800px;
     width: 100%;
     text-align: center;
-    margin: 10% 5% 5%;
+    margin: 5% 5% 5%;
 }
 
 label.radio {
