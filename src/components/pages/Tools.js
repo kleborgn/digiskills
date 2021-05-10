@@ -31,7 +31,7 @@ const Tools = () => {
                 
             </div>
             <div className="container__tools">
-            <h1>Team's</h1>
+            <h1>Teams</h1>
                         <img src="/images/discord.svg" alt="discord" />
                     <div className="content__tools">
                     
