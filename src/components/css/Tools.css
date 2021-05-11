@@ -17,10 +17,32 @@
    width: 200px !important;
    height: 300px;
    float: left;
-   shape-outside: circle();
    margin: 40px;
 }
 .content__tools{
     font-size: 20px;
     font-weight: 500;
+}
+.container__tools button{
+
+  z-index: 1;
+  padding: 12px 80px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 25px;
+  border: none;
+  background-color: #EF4B6C;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  float: left;
+  position: absolute;
+  bottom: 20%;
+}
+
+.container__tools button a {
+  color: #fff;
+}
+.container__tools button:hover{
+  transform: scale(1.05);
 }

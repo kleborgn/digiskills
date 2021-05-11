@@ -14,25 +14,25 @@ function Box() {
                         <BoxItem
                         src="images/discord.svg"
                         text="Discord"
-                        path='discord'
+                        path='tools'
                         
                         />
                         <BoxItem
                         src="images/Teams.svg"
                         text="Team's"
-                        path='teams'
+                        path='tools'
                         
                         />
                         <BoxItem
                         src="images/googledoc.svg"
                         text="G-Doc"
-                        path='google-doc'
+                        path='tools'
                         
                         />
                         <BoxItem
                         src="images/winrar.svg"
                         text="Winrar"
-                        path='winrar'
+                        path='tools'
                         
                         />
                         
@@ -42,19 +42,19 @@ function Box() {
                         <BoxItem
                         src="images/gimp.svg"
                         text="Gimp"
-                        path='gimp'
+                        path='tools'
                         
                         />
                         <BoxItem
                         src="images/trello.svg"
                         text="Trello"
-                        path='trello'
+                        path='tools'
                         
                         />
                         <BoxItem
                         src="images/office.svg"
                         text="Office"
-                        path='office'
+                        path='tools'
                         
                         />
                     </ul>

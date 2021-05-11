@@ -20,7 +20,6 @@ export const Button = ({ children, type, onClick, buttonStyle, buttonSize }) => 
                 type={type}>
                 {children}
             </button>
-
         </Link>
 
 
