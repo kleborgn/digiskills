@@ -41,7 +41,7 @@
 }
 @media screen and (max-width: 500px){
     .hero-container{
-        height: 75vh;
+        height: 74vh;
     }
     .hero-container p{
         margin-left: 8%;
