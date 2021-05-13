@@ -1,3 +1,9 @@
+.background-guide{
+  background-color: rgb(34, 33, 33);
+  padding: 10px;
+  height: 100%;
+}
+
 h1{
     text-align: center;
     margin: 2% auto;
@@ -71,6 +77,7 @@ h1{
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
+
   }
   
   .cards__item__pic-wrap {
@@ -118,10 +125,11 @@ h1{
     transform: scale(1.1);
   }
   
-  .cards__item__info {
-    padding: 20px 30px 30px;
+  .guide__container .cards__item__info {
+    padding: 10px 20px 20px;
     background-color: #DEE6E7;
     border-radius: 0 0 10px 10px;
+    height: 100%;
 
   }
   

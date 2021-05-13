@@ -10,6 +10,7 @@ const Tools = () => {
             <OwlCarousel items={1}
                 className="owl-theme"
                 loop
+                nav
             >
                 <div className="container__tools">
                     <h1 >Discord</h1>

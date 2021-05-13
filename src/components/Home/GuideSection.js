@@ -24,9 +24,8 @@ const GuideSection = () => {
                         <CardItem
                         src="images/MobileDevices.png"
                         text="Using devices and handling information is Using devices, 
-                        Finding and evaluating information, 
-                        Mananing and storing information, 
-                        Identifying and solving technical problem "
+                        Finding and evaluating information
+                         "
                         label="Information"
                         path='devices'
                         

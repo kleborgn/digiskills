@@ -1,6 +1,6 @@
 
 .container__tools{
-  margin: 100px auto;
+  margin: 20px auto;
   width: 1000px !important;
   padding: 30px;
   box-sizing: border-box;
@@ -8,6 +8,15 @@
   border-radius: 10px;
   height: 600px;
   background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+}
+.owl-nav{
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
+.owl-dots{
+  display: none;
 }
 .container__tools h1 {
     color: black;
