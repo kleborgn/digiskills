@@ -123,10 +123,12 @@
 }
 @media screen and (max-width: 412px){
   .container__tools{
+    margin: 10px auto;
     max-width: 300px;
+    max-height: 400px;
   }
   .content__tools{
-    font-size: 10.5px;
+    font-size: 9px;
   }
   .container__tools h1 {
     color: black;
@@ -142,7 +144,7 @@
 }
 .container__tools button{
   font-size: 15px;
-  bottom: 18%;
+  bottom: 5%;
  
 }
 }
