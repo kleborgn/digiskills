@@ -3,7 +3,6 @@ import '../css/Tools.css';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import { Button } from '../Home/Button';
 const Tools = () => {
 
     return (
@@ -25,7 +24,6 @@ const Tools = () => {
                             In summary, discord is a very powerful communication application for a variety of uses such as games or studies </p>
                             
                     </div>
-
                 </div>
                 <div className="container__tools">
                     <h1>Gimp</h1>

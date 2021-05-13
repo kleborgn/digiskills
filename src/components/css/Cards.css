@@ -128,6 +128,6 @@
   
   @media only screen and (max-width: 1024px) {
     .cards__item {
-      margin-bottom: 2rem;
+      margin-bottom: 2rem !important;
     }
   }

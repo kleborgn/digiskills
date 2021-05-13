@@ -38,3 +38,26 @@ h3{
     font-size: 2rem;
     margin-bottom: 40px;
 }
+@media screen and (max-width: 1024px){
+    .profil-container{
+        max-width: 800px;
+    }
+}
+@media screen and (max-width: 812px){
+    .profil-container{
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 612px){
+    .profil-container{
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 412px){
+    .profil-container{
+        max-width: 300px;
+    }
+    .profil-content{
+        font-size: 18px;
+    }
+}

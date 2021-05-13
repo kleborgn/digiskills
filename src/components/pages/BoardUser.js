@@ -12,6 +12,10 @@ import AuthService from "../../services/auth.service";
 import Login from "../login.component";
 import Register from "../register.component";
 import Profile from "../profile.component";
+import Privacy from "./Privacy";
+import Devices from "./Devices";
+import Creating from "./Creating";
+import Communication from "./Communication";
 
 export default class BoardUser extends Component {
   constructor(props) {
@@ -55,6 +59,10 @@ export default class BoardUser extends Component {
               <Route path='/Login' component={Login} />
               <Route path='/profile' component={Profile} />
               <Route path="/tools" component={Tools} />
+              <Route path="/privacy" component={Privacy} />
+              <Route path="/devices" component={Devices} />
+              <Route path="/creating" component={Creating} />
+              <Route path="/communication" component={Communication} />
             </Switch>
           </Router>
       </>

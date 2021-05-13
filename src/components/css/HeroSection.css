@@ -34,7 +34,24 @@
 .hero-btns .btn{
     margin: 6px;
 }
-
+@media screen and (max-width: 1024px){
+    .svg-header{
+        bottom: -20px;
+    }
+}
+@media screen and (max-width: 500px){
+    .hero-container p{
+        margin-left: 8%;
+        margin-right: 8%;
+        text-align: center;
+    }
+    .box h1{
+        margin-bottom: 15%;
+    }
+    .svg-header{
+        bottom: -10px;
+    }
+}
 @media screen and (max-width: 960px){
     .hero-container > h1 {
         font-size: 70px;
