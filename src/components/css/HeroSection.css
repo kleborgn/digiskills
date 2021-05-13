@@ -40,6 +40,9 @@
     }
 }
 @media screen and (max-width: 500px){
+    .hero-container{
+        height: 100vh;
+    }
     .hero-container p{
         margin-left: 8%;
         margin-right: 8%;
