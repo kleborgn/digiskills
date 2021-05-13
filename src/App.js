@@ -35,7 +35,6 @@ class App extends Component {
   }
 
   render() {
-    const { currentUser, showModeratorBoard, showAdminBoard } = this.state;
     return (
         <>
          <BoardUser/>
