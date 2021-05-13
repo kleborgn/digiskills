@@ -5,9 +5,6 @@ import Home from "./Home";
 import Navigation from '../Navigation'
 import Quiz from './Quiz';
 import Guides from './Guides';
-
-import AuthService from "../../services/auth.service";
-
 import Login from "../login.component";
 import Register from "../register.component";
 import Profile from "../profile.component";

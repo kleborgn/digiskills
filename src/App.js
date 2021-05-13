@@ -1,18 +1,10 @@
 import React, {Component} from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navigation from './components/Navigation'
-import Home from './components/pages/Home';
-import Quiz from './components/pages/Quiz';
-import Guides from './components/pages/Guides';
 import BoardUser from './components/pages/BoardUser';
-import BoardAdmin from './components/pages/BoardAdmin';
+
 
 import AuthService from "./services/auth.service";
 
-import Login from "./components/login.component";
-import Register from "./components/register.component";
-import Profile from "./components/profile.component";
 
 class App extends Component {
   constructor(props) {
