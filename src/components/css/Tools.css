@@ -8,14 +8,14 @@ body{
   box-sizing: border-box;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  height: 600px;
+  height: auto;
   background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
 }
 .owl-nav{
   font-size: 5rem;
   color: #fff;
   font-weight: 600;
-  margin-top: -40px !important;
+  margin-top: -125px !important;
 }
 .owl-dots{
   display: none;
@@ -27,8 +27,9 @@ body{
 .container__tools img{
    width: 200px !important;
    height: 300px;
-   float: left;
-   margin: 40px;
+ 
+   float:left;
+   margin: 20px;
 }
 .content__tools{
     font-size: 20px;
@@ -37,7 +38,7 @@ body{
 .container__tools button{
 
   z-index: 1;
-  padding: 12px 80px;
+  padding: 12px 60px;
   font-size: 20px;
   font-weight: 600;
   border-radius: 25px;
@@ -46,9 +47,6 @@ body{
   color: #fff;
   cursor: pointer;
   transition: 0.3s all ease-in-out;
-  float: left;
-  position: absolute;
-  bottom: 20%;
 }
 
 .container__tools button a {

@@ -14,7 +14,6 @@ const Tools = () => {
             >
                 <div className="container__tools">
                     <h1 >Discord</h1>
-                    <button> <a href="https://discord.com/">Download</a></button>
                     <img src="/images/discord.svg" alt="discord" />
                     <div className="content__tools">
 
@@ -25,10 +24,11 @@ const Tools = () => {
                             In summary, discord is a very powerful communication application for a variety of uses such as games or studies </p>
                             
                     </div>
+                    <button> <a href="https://discord.com/">Download</a></button>
                 </div>
                 <div className="container__tools">
                     <h1>Gimp</h1>
-                    <button> <a href="https://www.gimp.org/">Gimp</a></button>
+
                     <img src="/images/gimp.svg" alt="discord" />
                     <div className="content__tools">
 
@@ -40,11 +40,11 @@ const Tools = () => {
                         and many other thing.
                         </p>
                     </div>
-
+                    <button> <a href="https://www.gimp.org/">Gimp</a></button>
                 </div>
                 <div className="container__tools">
                     <h1>Teams</h1>
-                    <button> <a href="https://www.microsoft.com/fr-fr/microsoft-teams/group-chat-software">Teams</a></button>
+
                     <img src="/images/Teams.svg" alt="discord" />
                     <div className="content__tools">
 
@@ -54,11 +54,11 @@ const Tools = () => {
                             In addition, in Teams you can create several teams that can host several videoconference rooms.
                         </p>
                     </div>
-
+                    <button> <a href="https://www.microsoft.com/fr-fr/microsoft-teams/group-chat-software">Teams</a></button>
                 </div>
                 <div className="container__tools">
                     <h1>Google Doc</h1>
-                    <button> <a href="https://www.google.com/docs/about/">Google Doc</a></button>
+
                     <img src="/images/googledoc.svg" alt="discord" />
                     <div className="content__tools">
 
@@ -67,11 +67,11 @@ const Tools = () => {
                             The purpose of this tutorial is to guide you through getting acquainted with Google Docs' features so that you can apply them to your professional environment.
                             </p>
                     </div>
-
+                    <button> <a href="https://www.google.com/docs/about/">Google Doc</a></button>
                 </div>
                 <div className="container__tools">
                     <h1>Winrar</h1>
-                    <button> <a href="https://www.win-rar.com/start.html?&L=10">Winrar</a></button>
+
                     <img src="/images/winrar.svg" alt="discord" />
                     <div className="content__tools">
 
@@ -81,11 +81,11 @@ const Tools = () => {
                             WinRAR can also generate multi-file archives and encrypt the contents of archives up to AES-256 since version 5.10.
                         </p>
                     </div>
-
+                    <button> <a href="https://www.win-rar.com/start.html?&L=10">Winrar</a></button>
                 </div>
                 <div className="container__tools">
                     <h1>Trello</h1>
-                    <button> <a href="https://trello.com/fr">Trello</a></button>
+
                     <img src="/images/trello.svg" alt="discord" />
                     <div className="content__tools">
 
@@ -94,11 +94,11 @@ const Tools = () => {
                             Now imagine being able to take that whiteboard anywhere you go on your smartphone and access it from any computer via the web. That's Trello!
                         </p>
                     </div>
-
+                    <button> <a href="https://trello.com/fr">Trello</a></button>
                 </div>
                 <div className="container__tools">
                     <h1>Office</h1>
-                    <button> <a href="https://neuprodprv.www.office.com/">Office</a></button>
+
                     <img src="/images/office.svg" alt="discord" />
                     <div className="content__tools">
 
@@ -106,7 +106,7 @@ const Tools = () => {
                             Microsoft Office offers a web version that can be used directly online from a web browser. Office is also available for mobile devices: Windows Phone, iPhone, iPad, Android phones or tablets; it is then called Office Mobile, Office for iPad, Office for iPhone or Office for Android depending on the device used.
                         </p>
                     </div>
-
+                    <button> <a href="https://neuprodprv.www.office.com/">Office</a></button>
                 </div>
             </OwlCarousel>
         </>
