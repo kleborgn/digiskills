@@ -30,6 +30,7 @@
 .hero-btns{
     margin-top: 32px;
     margin-bottom: 50px;
+    z-index: 88;
 }
 .hero-btns .btn{
     margin: 6px;

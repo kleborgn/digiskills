@@ -1,4 +1,6 @@
-
+body{
+  height: 100%;
+}
 .container__tools{
   margin: 20px auto;
   width: 900px !important;

@@ -8,6 +8,7 @@ btn {
     outline: none;
     border: none;
     cursor: pointer;
+    z-index: 100;
 }
 
 .btn--primary {
