@@ -1,7 +1,7 @@
 
 .container__tools{
   margin: 20px auto;
-  width: 1000px !important;
+  width: 900px !important;
   padding: 30px;
   box-sizing: border-box;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
@@ -13,7 +13,7 @@
   font-size: 5rem;
   color: #fff;
   font-weight: 600;
-  margin: 0;
+  margin-top: -40px !important;
 }
 .owl-dots{
   display: none;

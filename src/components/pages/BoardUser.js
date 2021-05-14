@@ -60,6 +60,7 @@ export default class BoardUser extends Component {
               <Route path="/devices" component={Devices} />
               <Route path="/creating" component={Creating} />
               <Route path="/communication" component={Communication} />
+              <Route component={Communication} />
             </Switch>
           </Router>
       </>

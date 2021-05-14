@@ -48,6 +48,7 @@ h1{
     max-width: 1320px;
     width: 90%;
     margin: 0 auto;
+    background-color: rgb(34, 33, 33);
   }
   
   .cards__wrapper {
