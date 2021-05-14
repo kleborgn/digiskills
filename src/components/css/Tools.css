@@ -1,4 +1,4 @@
-body{
+html{
   height: 100%;
 }
 .container__tools{
@@ -15,7 +15,7 @@ body{
   font-size: 5rem;
   color: #fff;
   font-weight: 600;
-  margin-top: -125px !important;
+  margin-top: 0 !important;
 }
 .owl-dots{
   display: none;
