@@ -11,7 +11,10 @@ html{
   height: auto;
   background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
 }
-
+.hidden{
+  overflow-y: hidden !important;
+  height: 91.7vh;
+}
 .owl-theme{
   display: flex;
   flex-direction: column;
@@ -19,11 +22,21 @@ html{
   align-items: center;
 }
 .owl-nav{
-  font-size: 5rem;
+  font-size: 7rem;
   color: #fff;
   font-weight: 600;
   margin-top: 0 !important;
   padding-bottom: 5%;
+}
+button.owl-prev{
+  position: absolute;
+  left: 20%;
+  top: 30%
+}
+button.owl-next{
+  position: absolute;
+  right: 20%;
+  top: 30%;
 }
 .owl-dots{
   display: none;

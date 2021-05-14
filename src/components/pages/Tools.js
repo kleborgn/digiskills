@@ -6,7 +6,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const Tools = () => {
 
     return (
-        <>
+        <div className="hidden">
             <OwlCarousel items={1}
                 className="owl-theme"
                 loop
@@ -109,7 +109,7 @@ const Tools = () => {
                     <button> <a href="https://neuprodprv.www.office.com/">Office</a></button>
                 </div>
             </OwlCarousel>
-        </>
+        </div>
     )
 }
 
