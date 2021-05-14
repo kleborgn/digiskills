@@ -1,5 +1,5 @@
 html{
-  height: 100%;
+  height: auto !important;
 }
 .container__tools{
   margin: 20px auto;
