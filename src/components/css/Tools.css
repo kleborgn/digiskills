@@ -32,7 +32,9 @@
     font-weight: 500;
 }
 .container__tools button{
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
   padding: 12px 60px;
   font-size: 20px;
@@ -132,14 +134,16 @@
     margin: 10px auto;
     max-width: 300px;
     max-height: 400px;
+    padding-top: 10px;
   }
   .content__tools{
     font-size: 9.3px;
+    
   }
   .container__tools h1 {
     color: black;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .container__tools img{
    width: 60px !important;
@@ -149,8 +153,10 @@
    margin: 20px;
 }
 .container__tools button{
-  font-size: 15px;
-  bottom: 5%;
+  font-size: 11px;
+  z-index: 1;
+  width: 80px;
+  height: 40px;
  
 }
 }
