@@ -6,16 +6,10 @@ body,
     margin: auto;
     font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(to top right, #6200ffc4 10%, #6a00ffd0 40%, #9458c6 60%, #98107bf3 100%) !important;
-background: cover;
     
 }
 body {
     background-image: linear-gradient(to top right, #6200ffc4 10%, #6a00ffd0 40%, #9458c6 60%, #98107bf3 100%);
-}
-.backQuiz{
-   height: auto;
-   padding-bottom: 16%;
-
 }
 .App {
     display: flex;
@@ -81,6 +75,7 @@ label.radio input {
         max-width: 640px !important;
         margin: 25px auto !important;
     }
+    
 }
 @media screen and (max-width: 650px){
     .modal-card{
