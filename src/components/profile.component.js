@@ -15,7 +15,6 @@ export default class Profile extends Component {
         const { currentUser } = this.state;
 
         return (
-            <div className="hidden">
             <div className="profil-container">
                 <div className="profil-container-right">
                     <h3>
@@ -43,7 +42,6 @@ export default class Profile extends Component {
                 </ul>
                 </p>
                 </div>
-            </div>
             </div>
         );
     }
