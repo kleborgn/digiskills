@@ -21,7 +21,7 @@ const App = () => {
     setStep(2);
   }
   return (
-    <div className="backQuiz">
+    <>
     <h1 className="quiz">Test your skills</h1>
     <div className="App" >
       
@@ -46,7 +46,7 @@ const App = () => {
       data={quizData.data}
       />}
     </div>
-    </div>
+    </>
   );
 }
 

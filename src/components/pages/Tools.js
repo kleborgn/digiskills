@@ -6,12 +6,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const Tools = () => {
 
     return (
-        <div className="hidden">
-            <OwlCarousel items={1}
-                className="owl-theme"
-                loop
-                nav
-            >
+        <div className="background">
                 <div className="container__tools">
                     <h1 >Discord</h1>
                     <img src="/images/discord.svg" alt="discord" />
@@ -108,8 +103,7 @@ const Tools = () => {
                     </div>
                     <button> <a href="https://neuprodprv.www.office.com/">Office</a></button>
                 </div>
-            </OwlCarousel>
-        </div>
+                </div>
     )
 }
 

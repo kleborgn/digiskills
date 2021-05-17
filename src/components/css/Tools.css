@@ -1,5 +1,6 @@
-html{
-  height: auto !important;
+.background{
+  background-color: rgb(34, 33, 33);
+  padding: 10px;
 }
 .container__tools{
   margin: 20px auto;
@@ -14,35 +15,6 @@ html{
 .hidden{
   overflow-y: hidden !important;
   height: auto;
-  padding-bottom: 9.5%;
-}
-.owl-theme{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.owl-nav{
-  font-size: 7rem;
-  color: #fff;
-  font-weight: 600;
-  margin-top: 0 !important;
-  padding-bottom: 5%;
-}
-button.owl-prev{
-  position: absolute;
-  left: 5%;
-  top: 30%;
-  background-color: transparent !important;
-}
-button.owl-next{
-  position: absolute;
-  right: 5%;
-  top: 30%;
-  background-color: transparent !important;
-}
-.owl-dots{
-  display: none;
 }
 .container__tools h1 {
     color: black;
@@ -102,6 +74,7 @@ button.owl-next{
     font-size: 17px;
    
   }
+
 }
 
 @media screen and (max-width: 812px){
