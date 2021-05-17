@@ -30,12 +30,12 @@ html{
 }
 button.owl-prev{
   position: absolute;
-  left: 20%;
+  left: 5%;
   top: 30%
 }
 button.owl-next{
   position: absolute;
-  right: 20%;
+  right: 5%;
   top: 30%;
 }
 .owl-dots{
