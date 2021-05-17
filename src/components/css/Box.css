@@ -3,6 +3,7 @@
     background: #DEE6E7 !important;
     margin: 0 !important;
     box-shadow: none !important;
+    border-radius: 0 !important;
 
 }
 
@@ -119,7 +120,7 @@
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1124px) {
     .box__items {
         display: flex;
     }
