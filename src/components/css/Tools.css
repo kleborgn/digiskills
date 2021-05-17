@@ -14,7 +14,7 @@ html{
 .hidden{
   overflow-y: hidden !important;
   height: auto;
-  padding: 5%;
+  padding-bottom: 9.5%;
 }
 .owl-theme{
   display: flex;

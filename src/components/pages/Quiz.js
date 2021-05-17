@@ -21,7 +21,7 @@ const App = () => {
     setStep(2);
   }
   return (
-    <div className="hidden">
+    <div className="backQuiz">
     <h1 className="quiz">Test your skills</h1>
     <div className="App" >
       
