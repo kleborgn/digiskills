@@ -135,7 +135,9 @@ h1{
   }
   
   @media only screen and (max-width: 1024px) {
- 
+    html{
+      height: auto;
+    }
    
   }
 
