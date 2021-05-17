@@ -31,12 +31,14 @@ html{
 button.owl-prev{
   position: absolute;
   left: 5%;
-  top: 30%
+  top: 30%;
+  background-color: transparent !important;
 }
 button.owl-next{
   position: absolute;
   right: 5%;
   top: 30%;
+  background-color: transparent !important;
 }
 .owl-dots{
   display: none;
