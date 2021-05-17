@@ -1,7 +1,8 @@
 .background-guide{
   background-color: rgb(34, 33, 33);
   padding: 10px;
-  height: 91.7vh;
+  height: auto;
+  padding: 5%;
 }
 
 h1{

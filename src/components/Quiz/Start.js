@@ -3,7 +3,6 @@ import 'bulma/css/bulma.min.css';
 const Start = ({ onQuizStart }) => {
     return (
        
-           
             <div className="card">
                 <div className="card-content">
                     <div className="content">
@@ -15,7 +14,7 @@ const Start = ({ onQuizStart }) => {
                 </div>
 
             </div>
-     
+          
     );
 }
 

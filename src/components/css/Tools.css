@@ -13,7 +13,8 @@ html{
 }
 .hidden{
   overflow-y: hidden !important;
-  height: 91.7vh;
+  height: auto;
+  padding: 5%;
 }
 .owl-theme{
   display: flex;
