@@ -13,6 +13,7 @@ import Privacy from "./Privacy";
 import Devices from "./Devices";
 import Creating from "./Creating";
 import Communication from "./Communication";
+import HomeQuiz from "./HomeQuiz";
 
 export default class BoardUser extends Component {
   constructor(props) {
@@ -50,7 +51,8 @@ export default class BoardUser extends Component {
             <Navigation />
             <Switch>
               <Route path='/' exact component={Home} />
-              <Route path='/Quiz' component={Quiz} />
+              <Route path='/Quiz' component={HomeQuiz} />
+              <Route path='/q_creating' component={Quiz} />
               <Route path='/Guides' component={Guides} />
               <Route path='/Sign-up' component={Register} />
               <Route path='/Login' component={Login} />

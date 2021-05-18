@@ -4,7 +4,7 @@ import Question from '../Quiz/Question';
 import quizData from '../../data/quiz.json';
 import End from '../Quiz/End';
 import Modal from '../Quiz/Modal';
-const App = () => {
+const Quiz = () => {
   
   const [step, setStep] = useState(1);
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -50,4 +50,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default Quiz;
