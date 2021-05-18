@@ -3,7 +3,7 @@ import '../css/HomeQuiz.css'
 import { Link } from 'react-router-dom';
 const HomeQuiz = () => {
     return (
-        <div>
+        <div className="background-quiz">
             <div className="container-quiz">
                 <div className="wrapper-quiz">
                         <ul className="categorie">
