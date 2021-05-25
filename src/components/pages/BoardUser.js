@@ -14,6 +14,7 @@ import Devices from "./Devices";
 import Creating from "./Creating";
 import Communication from "./Communication";
 import HomeQuiz from "./HomeQuiz";
+import Feedback from "../feedback.component";
 
 export default class BoardUser extends Component {
   constructor(props) {
@@ -62,6 +63,7 @@ export default class BoardUser extends Component {
               <Route path="/devices" component={Devices} />
               <Route path="/creating" component={Creating} />
               <Route path="/communication" component={Communication} />
+              <Route path="/feedback" component={Feedback} />
               <Route component={Communication} />
             </Switch>
           </Router>
