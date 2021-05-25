@@ -1,5 +1,6 @@
 import React, { } from 'react';
 import axios from 'axios';
+import './css/Feedback.css';
 
 class App extends React.Component {
 
@@ -45,21 +46,19 @@ class App extends React.Component {
     render() {
 
         return (
+            <div className="form-div">
+                <div className="container-feedback">
+                    <div className="title">
+                        <h3>leave us a comment !</h3>
+                    </div>
                                 <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-                                    <div className="form-group">
-                                        <label htmlFor="name">Name</label>
-                                        <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
-                                    </div>
-                                    <div className="form-group">
-                                        <label htmlFor="email">Email</label>
-                                        <input type="text" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onemailChange.bind(this)} />
-                                    </div>
-                                    <div className="form-group">
-                                        <label htmlFor="message">Message</label>
-                                        <textarea className="form-control" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
-                                    </div>
+                                        <input type="text" className="form-control" id="name" placeholder="Enter your Name..."value={this.state.name} onChange={this.onNameChange.bind(this)} />
+                                        <input type="text" className="form-control" id="email" placeholder="Enter your Email..."aria-describedby="emailHelp" value={this.state.email} onChange={this.onemailChange.bind(this)} />
+                                        <textarea className="form-control"  id="message" placeholder="Enter your Message"value={this.state.message} onChange={this.onMessageChange.bind(this)} />
                                     <button type="submit" className="btn btn-primary">Submit</button>
                                 </form>
+                                </div>
+            </div>
         );
     }
     onNameChange(event) {
