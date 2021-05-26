@@ -1,53 +1,82 @@
-import React, { useState } from 'react';
+import React, {Component, useState} from 'react';
 import Start from '../Quiz/Start';
 import Question from '../Quiz/Question';
-import quizData from '../../data/quiz.json';
+import quizData2 from '../../data/quiz.json';
 import End from '../Quiz/End';
 import Modal from '../Quiz/Modal';
-const Quiz = () => {
-  
-  const [step, setStep] = useState(1);
-  const [activeQuestion, setActiveQuestion] = useState(0);
-  const [answers, setAnswers] = useState([]);
-  const [showModal, setShowModal] = useState(false);
+import QuizService from '../../services/quiz.service';
+import QuizRender from './QuizRender';
 
-  const quizStartHandler = () => {
-    setStep(2);
+export default class Quiz extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
   }
 
-  const resetClickHandler = () => {
-    setActiveQuestion(0);
-    setAnswers([]);
-    setStep(2);
+  componentWillMount() {
+    async function getAnswers(element) {
+      try {
+        let answers = await QuizService.getAnswersByQuestion(element.id);
+        element["answers"].push(answers.data);
+        return element;
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    async function buildjson(quizid) {
+      try {
+        let questions = await QuizService.getQuestionsByQuiz(quizid);
+        let data = questions.data;
+        for (let i = 0; i < data.length; i++) {
+          data[i]["answers"] = [];
+        }
+        for (let i = 0; i < data.length; i++) {
+          data[i] = await getAnswers(data[i]);
+        }
+        return data;
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    var quizData = [];
+    quizData["data"] = [];
+    buildjson(1).then(value => {
+      let res = value;
+      var data = [];
+      var field = {};
+      for (let i = 0; i < res.length; i++) {
+        field = {};
+        field["question"] = res[i].description;
+        field["choices"] = [];
+        for (let j = 0; j < res[i].answers[0].length; j++) {
+          field["choices"].push(res[i].answers[0][j].description);
+          if (res[i].answers[0][j].isCorrect) {
+            field["answer"] = res[i].answers[0][j].description;
+          }
+        }
+        data[i] = field;
+      }
+      //console.log(data);
+      return data;
+    }).then(data => {
+      for (let i = 0; i < data.length; i++) {
+        quizData["data"][i]= data[i];
+      }
+      console.log(quizData.data[0])
+      this.setState({data: quizData});
+    });
   }
-  return (
-    <>
-    <h1 className="quiz">Test your skills</h1>
-    <div className="App" >
-      
-      {step === 1 && <Start onQuizStart={quizStartHandler} />}
-      {step === 2 && <Question
-        data={quizData.data[activeQuestion]}
-        onAnswerUpdate={setAnswers}
-        numberOfQuestions={quizData.data.length}
-        activeQuestion={activeQuestion}
-        onSetActiveQuestion={setActiveQuestion}
-        onSetStep={setStep}
-      />}
-      {step === 3 && <End
-        results={answers}
-        data={quizData.data}
-        onReset={resetClickHandler}
-        onAnswersCheck={() => { setShowModal(true)}}
-      />}
-      {showModal && <Modal 
-      onClose={() => setShowModal(false)}
-      results={answers}
-      data={quizData.data}
-      />}
-    </div>
-    </>
-  );
+  render () {
+      if (!this.state.data) return null
+      console.log(this.state.data.data[0]);
+      return(
+          <>
+            <QuizRender
+                quizData = {this.state.data}
+                />
+          </>
+      );
+  }
 }
-
-export default Quiz;
