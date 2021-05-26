@@ -31,7 +31,7 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
             onSetStep(3);
         }
     }
-
+    console.log(data)
     return (
         <div className="card">
             <div className="card-content">
