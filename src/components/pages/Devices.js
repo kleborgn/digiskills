@@ -30,7 +30,45 @@ const Devices = () => {
                     B) Finding and evaluating information
                 </div>
                 <div className="content">
-                    <p>FAUT REMPLIR </p>
+                    <p>
+                    From starting your search to verifying the information you find, here are 5 tips for better online research. <br /> <br />
+                        <ul>
+                            <li>Think before you begin.</li>
+                                -   Rewrite every assignment in your own words before you begin your research. This will force you to understand it, and make it much more likely that you’ll be able to identify what is helpful when you see it.
+                            <li>Where to start your search?</li>
+                            <li>When looking at search results, dig deep – don’t stop at the first page!</li>
+                            <li>Use special search functions to make the search engines work for you</li>
+                                -   Useful search functions can help to empower students to search more effectively for information related to their topic. <br />
+                                -   Search using combinations of several keywords.
+                            <li>Find Primary Sources</li>
+                        </ul>
+
+                    </p>
+                    <p>Some principles : <br/><br/>
+                     -critical thinking is useful on all occasions <br />
+                     -asking questions beforehand helps to establish evaluation criteria <br />
+                     -nowing how to decipher domain names already provides information on the nature of the sites and the country of origin. <br /> <br />
+
+                      Ask yourself the right questions : <br /> <br />
+                      - Is the site reliable? <br />
+                      - Is the information interesting? <br />
+                      - Is it what I was looking for? <br /> <br />
+
+                      To go further <br /> <br />
+
+                        <ul>
+                            <li>Who? author, organisation </li>
+                            <li>What? quality of the information, the document, the site</li>
+                            <li>When? origin of the information, geographical limits </li>
+                            <li>Where? period covered, date of the document</li>
+                            <li>Why? objective(s) of the document, the site</li>
+                            <li>How ? structure of the document, navigation in the site</li>                    
+                        </ul> 
+                       
+                        
+                        
+                        
+                    </p>
                 </div>
                 <div className="title_parts">
                     C) Managing and storing information
