@@ -1,6 +1,6 @@
 
 
-@keyframes rocket-movement { 100% {transform: translate(1200px,-600px);} }
+@keyframes rocket-movement { 100% {transform: translate(1100px,-600px);} }
 
 @keyframes spin-earth{ 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); transition: transform 20s; } }
 
@@ -26,10 +26,10 @@
 .object_rocket{
     z-index: 95;
     position: absolute;
-    transform: translateX(-50px);
-    top: 75%;
+    transform: translateX(-20px);
+    top: 70%;
     pointer-events: none;
-    animation: rocket-movement 200s linear infinite both running;
+    animation: rocket-movement 50s linear infinite both running;
 }
 
 .object_earth{
