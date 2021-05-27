@@ -36,13 +36,7 @@ const Privacy = () => {
                     </p>
                 </div>
                 <div className="title_parts">
-                    B) Protecting data
-                </div>
-                <div className="content">
-                    <p>Here you can find how to protect your data</p>
-                </div>
-                <div className="title_parts">
-                    C) Being responsible online
+                    B) Being responsible online
                 </div>
                 <div className="content">
                     <h3>1 - Use proper language</h3>
@@ -57,10 +51,24 @@ const Privacy = () => {
                     <p>When you're on the internet, you're talking to the whole world and therefore there are multiple cultures, so you have to respect the whole world, don't use abusive language</p>
                 </div>
                 <div className="title_parts">
-                    D) Digital wellbeing
+                    C) Digital wellbeing
                 </div>
                 <div className="content">
-                    <p>Here you can find how to protect your data</p>
+                    <p>For several years now, several companies and researchers have realised that digital technology has a serious impact on people's physical, emotional, mental and social health. Digital technology impacts all aspects of our well-being, positively or negatively depending on how we use it. <br />
+                    Some information on average :
+                    <ul>
+                        <li>We look at our phone every 12 minutes</li>
+                        <li>65% of people play on their phone/tablet to relax at home</li>
+                        <li>We spend 25 hours a week on social media</li>
+                        <li>46% of us couldn't live without our phones</li>
+                        <li>4 billion people, half the world's population, have access to the internet</li>
+                    </ul>
+                        To reduce this addiction here are some tips: <br /><br />
+                        -   Leave the phone and tablet out of the bedroom. This practice really works, my screen is no longer the last thing I look at before going to sleep nor the first thing I see when I wake up, a real joy. <br />
+                        -   Turn off all notifications (yes, yes, all of them!). Try it, it's worth it, even if it takes a while to turn them off as you have to do it one by one. Start with the most intrusive ones, namely Netflix, Spotify, Amazon and Kindle. <br/>
+                        -   Set your phone to black and white. <br />
+                        -   Take breaks if you work from home <br />
+                    </p>
                 </div>
             </div>
         </div>
