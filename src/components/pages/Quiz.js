@@ -1,9 +1,4 @@
-import React, {Component, useState} from 'react';
-import Start from '../Quiz/Start';
-import Question from '../Quiz/Question';
-import quizData2 from '../../data/quiz.json';
-import End from '../Quiz/End';
-import Modal from '../Quiz/Modal';
+import React from 'react';
 import QuizService from '../../services/quiz.service';
 import QuizRender from './QuizRender';
 

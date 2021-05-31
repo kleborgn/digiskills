@@ -15,6 +15,7 @@ import Creating from "./Creating";
 import Communication from "./Communication";
 import HomeQuiz from "./HomeQuiz";
 import Feedback from "../feedback.component";
+import Page404 from "./Page404";
 
 export default class BoardUser extends Component {
   constructor(props) {
@@ -64,7 +65,7 @@ export default class BoardUser extends Component {
               <Route path="/creating" component={Creating} />
               <Route path="/communication" component={Communication} />
               <Route path="/feedback" component={Feedback} />
-              <Route component={Communication} />
+              <Route component={Page404} />
             </Switch>
           </Router>
       </>

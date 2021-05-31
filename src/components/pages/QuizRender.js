@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Start from '../Quiz/Start';
 import Question from '../Quiz/Question';
-import quizData from '../../data/quiz.json';
 import End from '../Quiz/End';
 import Modal from '../Quiz/Modal';
 const QuizRender = (quizData) => {
