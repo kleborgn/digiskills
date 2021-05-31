@@ -38,35 +38,32 @@
     height: 250px;
     padding: 5rem;
     border-radius: 50%;
-    color: #fff;
-    font-size: 20px;
-    animation: animate 3s infinite alternate;
+    color: rgb(77, 77, 77);
+    font-weight: 500;
+    font-size: 25px;
+
     transition: .3s ease-in;
     
 }
 .devices{
-    background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
-    background-size: 400%;
-    box-shadow: 10px 10px 10px rgba(19, 221, 36, 0.582);
-    animation-delay: -5s;
+    background-image: linear-gradient(120deg, #ff9894 0%, #ffcbff 100%);
+    box-shadow: 10px 10px 10px #ffcbff3f;
+    animation-delay: 0s;
 }
 .communication{
-    background-image: linear-gradient(to right, #5ee7df 0%, #a764d1 100%);
-    box-shadow: 10px 10px 10px rgba(53, 184, 224, 0.705);
-    animation-delay: -1s;
-    background-size: 400%;
+    background-image: linear-gradient(120deg, #68f0a5 0%, #dcf7b4 100%);
+    box-shadow: 10px 10px 10px #dcf7b438;
+    animation-delay: 1s;
 }
 .creating{
-    background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
-    box-shadow: 10px 10px 10px rgba(243, 116, 144, 0.644);
-    animation-delay: -3s;
-    background-size: 400%;
+    background-image: linear-gradient(120deg, #6e98f8 0%, #a7dff2 100%);
+    box-shadow: 10px 10px 10px #a7dff23b;
+    animation-delay: 2s;
 }
 .security{
-    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
-    box-shadow: 10px 10px 10px rgba(241, 187, 39, 0.541);
-    animation-delay: -2s;
-    background-size: 400%;
+    background-image: linear-gradient(120deg, #fc99dd 0%, #ffd8e6 100%);
+    box-shadow: 10px 10px 10px #ffd8e63f;
+    animation-delay: 3s;
 }
 .devices:hover{
     transform: scale(1.1);

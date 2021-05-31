@@ -5,10 +5,11 @@ const HomeQuiz = () => {
     return (
         <div className="background-quiz">
             <div className="container-quiz">
+                <h1>Choose your quiz and train your skills !</h1>
                 <div className="wrapper-quiz">
                         <ul className="categorie">
                             <li className="item-quiz">
-                                <h2>Quiz N°1</h2>
+                                
                                 <Link to="/q_devices">
                                     <div className="title_quiz devices">
                                         Devices
@@ -17,7 +18,7 @@ const HomeQuiz = () => {
                                 
                             </li>
                             <li className="item-quiz">
-                                <h2>Quiz N°2</h2>
+                               
                                 <Link to="/q_communication">
                                     <div className="title_quiz communication" >
                                         Communication
@@ -26,7 +27,7 @@ const HomeQuiz = () => {
                                 
                             </li>
                             <li className="item-quiz">
-                                <h2>Quiz N°3</h2>
+                              
                                 <Link to="/q_creating">
                                     <div className="title_quiz creating">
                                         Creating and editing
@@ -34,7 +35,7 @@ const HomeQuiz = () => {
                                 </Link>
                             </li>
                             <li className="item-quiz">
-                                <h2>Quiz N°4</h2>
+                                
                                 <Link to="/q_security">
                                     <div className="title_quiz security">
                                         Security
