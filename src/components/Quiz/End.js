@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import 'bulma/css/bulma.min.css';
-const End = ({ results, data, onReset, onAnswersCheck }) => {
+import QuizService from '../../services/quiz.service';
+import AuthService from "../../services/auth.service";
+const End = ({ results, data, onReset, onAnswersCheck, quizid }) => {
     const [correctAnswers, setCorrectAnswers] = useState(0);
 
     useEffect(() => {
@@ -11,6 +13,9 @@ const End = ({ results, data, onReset, onAnswersCheck }) => {
             }
         });
         setCorrectAnswers(correct);
+        let user = AuthService.getCurrentUser();
+        console.log(quizid)
+        QuizService.putScore(user.id, quizid, correct);
 
     }, [results, data]);
     return (

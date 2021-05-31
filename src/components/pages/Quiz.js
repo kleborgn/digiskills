@@ -37,7 +37,7 @@ export default class Quiz extends React.Component {
 
     var quizData = [];
     quizData["data"] = [];
-    buildjson(1).then(value => {
+    buildjson(this.props.match.params.id).then(value => {
       let res = value;
       var data = [];
       var field = {};
@@ -59,17 +59,17 @@ export default class Quiz extends React.Component {
       for (let i = 0; i < data.length; i++) {
         quizData["data"][i]= data[i];
       }
-      console.log(quizData.data[0])
       this.setState({data: quizData});
     });
   }
   render () {
       if (!this.state.data) return null
-      console.log(this.state.data.data[0]);
+
       return(
           <>
             <QuizRender
                 quizData = {this.state.data}
+                quizid={this.props.match.params.id}
                 />
           </>
       );

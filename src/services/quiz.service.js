@@ -41,7 +41,18 @@ class QuizService {
     getAnswersByQuestion(questionid) {
         return axios.get(API_URL + "answers/byQuestion/" + questionid)
     }
-    
+
+    getScore(userid) {
+        return axios.get(API_URL + "scores/" + userid)
+    }
+
+    putScore(userid, quizid, value) {
+        return axios.put(API_URL + "scores", {
+            userid,
+            quizid,
+            value
+        })
+    }
 }
 
 export default new QuizService();

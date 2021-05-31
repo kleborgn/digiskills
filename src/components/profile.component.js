@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import AuthService from "../services/auth.service";
 import './css/profil.css';
+import Score from "./score.component"
 
 export default class Profile extends Component {
     constructor(props) {
@@ -42,6 +43,7 @@ export default class Profile extends Component {
                 </ul>
                 </p>
                 </div>
+                <Score></Score>
             </div>
         );
     }

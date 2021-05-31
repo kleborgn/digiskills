@@ -53,8 +53,8 @@ export default class BoardUser extends Component {
             <Navigation />
             <Switch>
               <Route path='/' exact component={Home} />
-              <Route path='/Quiz' component={HomeQuiz} />
-              <Route path='/q_creating' component={Quiz} />
+              <Route path='/QuizHome' component={HomeQuiz} />
+              <Route exact path='/quiz/:id' component={Quiz} />
               <Route path='/Guides' component={Guides} />
               <Route path='/Sign-up' component={Register} />
               <Route path='/Login' component={Login} />
