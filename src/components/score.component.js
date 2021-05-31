@@ -19,7 +19,7 @@ export default class Score extends React.Component {
             }
         }
 
-        getScores(1).then(data => {
+        getScores(2).then(data => {
             this.setState({data: data})
         });
     }
