@@ -31,14 +31,14 @@ export default class Profile extends Component {
             p className = "profil-content" >
             <
             strong > Email: < /strong>{" "} { currentUser.email } <
-            /p> <
+            /p>
+                <p className = "profil-content"><Score></Score></p>
+
+                <
             button onClick = { AuthService.logout } > < a href = "./" > LOGOUT < /a></button >
             <
             /div>
-
-            <
-            Score > < /Score> <
-            /div>
+            </div>
         );
     }
 }
