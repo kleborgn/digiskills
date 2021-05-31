@@ -3,7 +3,7 @@ import Start from '../Quiz/Start';
 import Question from '../Quiz/Question';
 import End from '../Quiz/End';
 import Modal from '../Quiz/Modal';
-const QuizRender = (quizData) => {
+const QuizRender = (quizData, quizid) => {
 
     const [step, setStep] = useState(1);
     const [activeQuestion, setActiveQuestion] = useState(0);
@@ -19,7 +19,6 @@ const QuizRender = (quizData) => {
         setStep(2);
     }
 
-    console.log(quizData.quizData.data[0])
 
     return (
         <>
@@ -38,6 +37,7 @@ const QuizRender = (quizData) => {
                 {step === 3 && <End
                     results={answers}
                     data={quizData.quizData.data}
+                    quizid={quizData.quizid}
                     onReset={resetClickHandler}
                     onAnswersCheck={() => { setShowModal(true)}}
                 />}
