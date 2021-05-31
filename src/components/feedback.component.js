@@ -17,7 +17,7 @@ class App extends React.Component {
         e.preventDefault();
         axios({
             method: "POST",
-            url:"http://localhost:8081/reviews",
+            url:"http://localhost:8080/reviews",
             data:  this.state
         }).then((response)=>{
             if (response.data.status === 'success'){
