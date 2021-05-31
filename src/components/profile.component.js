@@ -21,12 +21,6 @@ export default class Profile extends Component {
                     <h3>
                         <strong>Profile: </strong>{currentUser.username}
                     </h3>
-                
-                <p className="profil-content">
-                    <strong>Token:</strong>{" "}
-                    {currentUser.accessToken.substring(0, 20)} ...{" "}
-                    {currentUser.accessToken.substr(currentUser.accessToken.length - 20)}
-                </p>
                 <p className="profil-content">
                     <strong>Id:</strong>{" "}
                     {currentUser.id}
@@ -34,13 +28,6 @@ export default class Profile extends Component {
                 <p className="profil-content">
                     <strong>Email:</strong>{" "}
                     {currentUser.email}
-                </p>
-                <p className="profil-content">
-                <strong>Authorities:</strong>
-                <ul className="profil-content">
-                    {currentUser.roles &&
-                    currentUser.roles.map((role, index) => <li key={index}>{role}</li>)}
-                </ul>
                 </p>
                 </div>
                 <Score></Score>
