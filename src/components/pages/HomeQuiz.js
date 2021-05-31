@@ -10,7 +10,7 @@ const HomeQuiz = () => {
                         <ul className="categorie">
                             <li className="item-quiz">
                                 
-                                <Link to="/q_devices">
+                                <Link to="/quiz/1">
                                     <div className="title_quiz devices">
                                         Devices
                                     </div>
@@ -19,7 +19,7 @@ const HomeQuiz = () => {
                             </li>
                             <li className="item-quiz">
                                
-                                <Link to="/q_communication">
+                                <Link to="/quiz/2">
                                     <div className="title_quiz communication" >
                                         Communication
                                     </div>
@@ -28,7 +28,7 @@ const HomeQuiz = () => {
                             </li>
                             <li className="item-quiz">
                               
-                                <Link to="/q_creating">
+                                <Link to="/quiz/3">
                                     <div className="title_quiz creating">
                                         Creating and editing
                                     </div>
@@ -36,7 +36,7 @@ const HomeQuiz = () => {
                             </li>
                             <li className="item-quiz">
                                 
-                                <Link to="/q_security">
+                                <Link to="/quiz/4">
                                     <div className="title_quiz security">
                                         Security
                                     </div>

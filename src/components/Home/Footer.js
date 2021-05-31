@@ -7,7 +7,7 @@ function Footer() {
         <div className='footer-container'>
             <img className="svg-footer" src="/images/SvgFooter.png" alt="/"/>
             <h1>Go test yourself !</h1>
-                <Link className="btn-footer" to="/HomeQuiz">                 
+                <Link className="btn-footer" to="/QuizHome">                 
                         Quiz !
                 </Link>
                 

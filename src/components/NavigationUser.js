@@ -63,7 +63,7 @@ const NavigationUser = () => {
                         <li>
                             <Link
                             to="./"
-                                className='nav-links-mobile'
+                            className='nav-links-mobile'
                                 onClick={closeMobileMenu, authService.logout}
                             >
                                 logout
@@ -71,7 +71,7 @@ const NavigationUser = () => {
                         </li>
                         
                     </ul>
-                    {button && <Button onClick={authService.logout} buttonStyle="btn--outline">Logout</Button>}
+                    {button && <Button  buttonStyle="btn--outline">Logout</Button>}
                 </div>
         </nav>
        </>

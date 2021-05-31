@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import UserService from "../../services/user.service";
 import Home from "./Home";
+import HomeUser from "./HomeUser";
 import Quiz from './Quiz';
 import Guides from './Guides';
 import Tools from './Tools';
@@ -57,9 +58,8 @@ export default class BoardUser extends Component {
        <Router>
             <NavigationUser />
             <Switch>
-              <Route path='/' exact component={Home} />
+              <Route path='/' exact component={HomeUser} />
               <Route path='/QuizHome' component={HomeQuiz} />
-              <Route path='/q_creating' component={Quiz} />
               <Route exact path='/quiz/:id' component={Quiz} />
               <Route path='/Guides' component={Guides} />
               <Route path='/Sign-up' component={Register} />
@@ -85,8 +85,7 @@ export default class BoardUser extends Component {
             <NavigationPublic />
             <Switch>
               <Route path='/' exact component={Home} />
-              <Route path='/Quiz' component={HomeQuiz} />
-              <Route path='/q_creating' component={Quiz} />
+              <Route path='/QuizHome' component={Register} />
               <Route path='/Guides' component={Guides} />
               <Route path='/Sign-up' component={Register} />
               <Route path='/Login' component={Login} />
