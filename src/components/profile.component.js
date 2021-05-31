@@ -28,7 +28,9 @@ export default class Profile extends Component {
                     <strong>Email:</strong>{" "}
                     {currentUser.email}
                 </p>
+                <button onClick={AuthService.logout}><a href="./">LOGOUT</a></button>
                 </div>
+               
             </div>
         );
     }
