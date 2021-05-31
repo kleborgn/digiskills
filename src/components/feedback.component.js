@@ -12,20 +12,11 @@ class App extends React.Component {
         };
     }
 
-    TextFile = () => {
-        const element = document.createElement("a");
-        const file = new Blob([document.getElementById('myInput').value], {type: 'text/plain'});
-        element.href = URL.createObjectURL(file);
-        element.download = "feedbacks.txt";
-        document.body.appendChild(element); // Required for this to work in FireFox
-        element.click();
-    }
-
     handleSubmit(e){
         e.preventDefault();
         axios({
             method: "POST",
-            url:"http://localhost:8081",
+            url:"http://localhost:8081/reviews",
             data:  this.state
         }).then((response)=>{
             if (response.data.status === 'success'){
