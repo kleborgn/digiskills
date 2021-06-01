@@ -51,7 +51,9 @@
   .nav-item {
     height: 80px;
   }
-  
+  .logout{
+    color: #fff;
+  }
   .nav-links {
     color: #fff;
     display: flex;
