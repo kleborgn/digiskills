@@ -52,7 +52,7 @@ export default class BoardUser extends Component {
   render() {
     console.log(this.state)
     if(!this.state.user) return null
-    if(this.state.user == "User Content."){
+    if(this.state.user === "User Content."){
       return (
         <>
        <Router>
