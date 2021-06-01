@@ -15,15 +15,16 @@ class App extends React.Component {
 
     handleSubmit(e){
         e.preventDefault();
-        axios({
-            method: "POST",
-            url:"http://localhost:8080/reviews",
-            data:  this.state
+        axios.post("http://localhost:8080/reviews", {
+            name: this.state.name,
+            email: this.state.email,
+            message: this.state.message
         }).then((response)=>{
-            if (response.data.status === 'success'){
+            console.log(response)
+            if (response.status === 201){
                 alert("Message Sent.");
                 this.resetForm()
-            }else if(response.data.status === 'fail'){
+            }else {
                 alert("Message failed to send.")
             }
         })
