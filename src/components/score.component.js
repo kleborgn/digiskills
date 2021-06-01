@@ -1,5 +1,6 @@
 import React from 'react';
 import QuizService from '../services/quiz.service';
+import AuthService from "../services/auth.service";
 
 export default class Score extends React.Component {
     constructor(props) {
@@ -19,7 +20,9 @@ export default class Score extends React.Component {
             }
         }
 
-        getScores(2).then(data => {
+        let user = AuthService.getCurrentUser();
+
+        getScores(user.id).then(data => {
             this.setState({data: data})
         });
     }
