@@ -6,8 +6,8 @@ function HeroSection() {
     return (
         <div className='hero-container'>
             <img className="svg-header"src="/images/SvgHeader.svg" alt="/"/>
-            <h1>We are DigiSkills</h1>
-            <p>A WebSite to develop your digital skills</p>            
+            <h1>Welcome to DigiSkills</h1>
+            <p>A WebApp to develop your digital skills</p>            
         </div>
     )
 }
