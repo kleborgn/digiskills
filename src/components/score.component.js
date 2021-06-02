@@ -29,12 +29,13 @@ export default class Score extends React.Component {
 
     render() {
         if (!this.state.data) return null
+        const list = this.state.data.map(item =>
+            <li key="{item.quizid}">Quiz {item.quizid} : {item.value} %</li>)
         return (
             <>
                 <div>
                     <ul>
-                    {this.state.data.map(item =>
-                        <li key="{item.quizid}">Quiz {item.quizid} : {item.value}</li>)}
+                        {list}
                     </ul>
                 </div>
             </>
