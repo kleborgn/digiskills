@@ -15,7 +15,7 @@ const End = ({ results, data, onReset, onAnswersCheck, quizid }) => {
         setCorrectAnswers(correct);
         let user = AuthService.getCurrentUser();
         console.log(quizid)
-        QuizService.putScore(user.id, quizid, correct);
+        QuizService.putScore(user.id, quizid, Math.floor((correct / data.length) * 100));
 
     }, [results, data]);
     return (
