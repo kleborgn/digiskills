@@ -48,22 +48,27 @@
 .devices{
     background-image: linear-gradient(120deg, #ff9894 0%, #ffcbff 100%);
     box-shadow: 10px 10px 10px #ffcbff3f;
-    animation-delay: 0s;
+
 }
 .communication{
     background-image: linear-gradient(120deg, #68f0a5 0%, #dcf7b4 100%);
     box-shadow: 10px 10px 10px #dcf7b438;
-    animation-delay: 1s;
+
 }
 .creating{
     background-image: linear-gradient(120deg, #6e98f8 0%, #a7dff2 100%);
     box-shadow: 10px 10px 10px #a7dff23b;
-    animation-delay: 2s;
+
 }
 .security{
     background-image: linear-gradient(120deg, #fc99dd 0%, #ffd8e6 100%);
     box-shadow: 10px 10px 10px #ffd8e63f;
-    animation-delay: 3s;
+
+}
+.final{
+    background-image: linear-gradient(120deg, #ffc289 0%, #ffeeba 100%);
+    box-shadow: 10px 10px 10px #fdf6973f;
+
 }
 .devices:hover{
     transform: scale(1.1);
