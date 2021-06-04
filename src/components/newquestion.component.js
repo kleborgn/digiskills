@@ -1,6 +1,7 @@
 import React, { } from 'react';
 import axios from 'axios';
 import QuizService from '../services/quiz.service'
+import "./css/question.css";
 
 class App extends React.Component {
 
@@ -67,17 +68,20 @@ class App extends React.Component {
 
         return (
             <div>
-                <div>
+                <div className="container-question">
                     <form id="question-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                         <input type="number" id="quizid" placeholder="Enter QuizId..." value={this.state.quizid} onChange={this.onQuizIdChange.bind(this)} />
                         <input type="text" id="description" placeholder="Enter Question..." value={this.state.email} onChange={this.onQuestionDescriptionChange.bind(this)} />
-                        <button type="submit">Submit</button>
+                        <button className="btn--outline"type="submit">Submit</button>
                     </form>
-                    <form id="answer-form" onSubmit={this.handleAnswerSubmit.bind(this)} method="POST">
+                    <form className="answer" id="answer-form" onSubmit={this.handleAnswerSubmit.bind(this)} method="POST">
                         <input type="text" id="answer" placeholder="Enter Answer..." value={this.state.answerDescription} onChange={this.onAnswerDescriptionChange.bind(this)} />
-                        Correct ?
-                        <input type="checkbox" id="isCorrect" value={this.state.isCorrect} onChange={this.onIsCorrectChange.bind(this)} />
-                        <button type="submit">Add answer</button>
+                        <div >
+                            Correct ?
+                            <input className="checkbox"type="checkbox" id="isCorrect" value={this.state.isCorrect} onChange={this.onIsCorrectChange.bind(this)} />
+                        </div>
+                        
+                        <button className="btn--outline"type="submit">Add answer</button>
                     </form>
                 </div>
             </div>

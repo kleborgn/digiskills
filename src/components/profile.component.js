@@ -36,7 +36,7 @@ export default class Profile extends Component {
                     <p>
                         <NewQuestion></NewQuestion>
                     </p>
-                    <button onClick={AuthService.logout}><a href="./">LOGOUT</a></button>
+                    <button className="btn--outline" onClick={AuthService.logout}><a className="logout" href="./">LOGOUT</a></button>
                 </div>
 
                 
