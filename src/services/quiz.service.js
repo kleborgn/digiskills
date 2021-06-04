@@ -24,10 +24,15 @@ class QuizService {
     }
 
     postQuestion(quizid, description) {
-        return axios.post(API_URL + "questions", {
-            quizid,
-            description
-        })
+        try {
+            return axios.post(API_URL + "questions", {
+                quizid,
+                description
+            })
+        } catch (e) {
+            console.error(e);
+            return null;
+        }
     }
 
     getAnswers() {
@@ -40,6 +45,14 @@ class QuizService {
 
     getAnswersByQuestion(questionid) {
         return axios.get(API_URL + "answers/byQuestion/" + questionid)
+    }
+
+    postAnswer(questionid, description, isCorrect) {
+        return axios.post(API_URL + "answers", {
+            questionid,
+            description,
+            isCorrect
+        })
     }
 
     getScore(userid) {

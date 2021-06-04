@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import AuthService from "../services/auth.service";
 import './css/profil.css';
 import Score from "./score.component"
+import NewQuestion from "./newquestion.component"
 
 export default class Profile extends Component {
     constructor(props) {
@@ -31,6 +32,9 @@ export default class Profile extends Component {
                     </p>
                     <p className="profil-content">
                         <Score></Score>
+                    </p>
+                    <p>
+                        <NewQuestion></NewQuestion>
                     </p>
                     <button onClick={AuthService.logout}><a href="./">LOGOUT</a></button>
                 </div>
