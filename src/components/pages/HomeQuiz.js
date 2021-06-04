@@ -43,6 +43,17 @@ const HomeQuiz = () => {
                                 </Link>
                             </li>
                         </ul>
+                        <ul className="categorie">
+                            <li className="item-quiz">
+                                
+                                <Link to="/quiz/5">
+                                    <div className="title_quiz final">
+                                        Final Quiz
+                                    </div>
+                                </Link>
+                                
+                            </li>
+                        </ul>
                 </div>
             </div>
         </div>

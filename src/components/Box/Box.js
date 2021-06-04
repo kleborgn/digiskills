@@ -5,7 +5,7 @@ import '../css/Box.css';
 function Box() {
     return (
         <div className='box'>
-            <h1>Usefull tools</h1>
+            <h1>Useful tools</h1>
            
             <div className="box__container">
             
