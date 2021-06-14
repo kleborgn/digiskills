@@ -4,6 +4,7 @@ import './css/profil.css';
 import Score from "./score.component"
 import NewQuestion from "./newquestion.component"
 
+
 export default class Profile extends Component {
     constructor(props) {
         super(props);
@@ -11,11 +12,17 @@ export default class Profile extends Component {
         this.state = {
             currentUser: AuthService.getCurrentUser()
         };
+        
     }
 
     render() {
         const { currentUser } = this.state;
-
+        var Question = null;
+        console.log(this.state.currentUser);
+        if(this.state.currentUser.roles.includes("ROLE_MODERATOR")){
+            Question = <NewQuestion/>;
+        }
+        
         return (
             <div className="profil-container">
                 <div className="profil-container-right">
@@ -33,10 +40,11 @@ export default class Profile extends Component {
                     <p className="profil-content">
                         <Score></Score>
                     </p>
+                
                     <p>
-                        <NewQuestion></NewQuestion>
+                        {Question}
                     </p>
-                    <button onClick={AuthService.logout}><a href="./">LOGOUT</a></button>
+                    <button className="btn--outline" onClick={AuthService.logout}><a className="logout" href="./">LOGOUT</a></button>
                 </div>
 
                 

@@ -51,11 +51,11 @@ export default class BoardUser extends Component {
 
   render() {
     console.log(this.state)
-    if(!this.state.user) return null
-    if(this.state.user === "User Content."){
+    if (!this.state.user) return null
+    if (this.state.user === "User Content.") {
       return (
         <>
-       <Router>
+          <Router>
             <NavigationUser />
             <Switch>
               <Route path='/' exact component={HomeUser} />
@@ -74,33 +74,33 @@ export default class BoardUser extends Component {
               <Route component={Page404} />
             </Switch>
           </Router>
-      </>
-    );
-      
+        </>
+      );
+
     } else {
-      
+
       return (
         <>
-       <Router>
+          <Router>
             <NavigationPublic />
             <Switch>
-              <Route path='/' exact component={Home} />
-              <Route path='/QuizHome' component={Register} />
-              <Route path='/Guides' component={Guides} />
-              <Route path='/Sign-up' component={Register} />
-              <Route path='/Login' component={Login} />
-              <Route path="/tools" component={Tools} />
-              <Route path="/privacy" component={Privacy} />
-              <Route path="/devices" component={Devices} />
-              <Route path="/creating" component={Creating} />
-              <Route path="/communication" component={Communication} />
-              <Route path="/feedback" component={Feedback} />
+              <Route path='./' exact component={Home} />
+              <Route path='./QuizHome' component={Register} />
+              <Route path='./Guides' component={Guides} />
+              <Route path='./Sign-up' component={Register} />
+              <Route path='./Login' component={Login} />
+              <Route path="./tools" component={Tools} />
+              <Route path="./privacy" component={Privacy} />
+              <Route path="./devices" component={Devices} />
+              <Route path="./creating" component={Creating} />
+              <Route path="./communication" component={Communication} />
+              <Route path="./feedback" component={Feedback} />
               <Route component={Page404} />
             </Switch>
           </Router>
-      </>
-    );
+        </>
+      );
     }
-   
+
   }
 }
